@@ -160,14 +160,14 @@
     var abalinks = document.getElementsByClassName("aba-links");
     var abaconteudo = document.getElementsByClassName("aba-conteudo");
 
-    function opentab(abanome){
-        for(abalinks of abalinks){
-            abalink.classlist.remove("link-ativo");
+    function opentab(abanome) {
+        for (var i = 0; i < abalinks.length; i++) {
+            abalinks[i].classList.remove("link-ativo");
         }
-        for(abaconteudo of abaconteudo ){
-            abaconteudo.classlist.remove("aba-ativa");
+        for (var i = 0; i < abaconteudo.length; i++) {
+            abaconteudo[i].classList.remove("aba-ativa");
         }
-        event.currentTarget.classlist.add("Link-ativo");
+        event.target.classList.add("link-ativo");
         document.getElementById(abanome).classList.add("aba-ativa");
     }
 </script>
