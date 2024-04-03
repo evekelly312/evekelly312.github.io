@@ -54,7 +54,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-.hearder-text{
+.heder-text{
     margin-top: 10%;
     font-size: 30px;
 }
@@ -62,7 +62,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 20px;
 }
-.hearder-text h1 span{
+.header-text h1 span{
     color: pink;
 }
 
@@ -338,3 +338,44 @@ form .btn2{
     color: #fff;
 }
 
+/*---------- Responsividade -----------*/
+nav .fa{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa{
+        display: block;
+        font-size: 35px;
+    }
+    nav ul{
+        background: #ffc0cb;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-título{
+        font-size: 40px;
+    }
+}
