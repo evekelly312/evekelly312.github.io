@@ -8,19 +8,22 @@
     <script src="https://kit.fontawesome.com/f4e9277dda.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<main>
 <div id="header">
     <div class="container"> 
         <nav>
             <img src="logo.png" class="logo">
-            <ul>
+            <ul id="menusite">
                 <li><a href="#header">Início</a></li>
                 <li><a href="#Sobre">Sobre</a></li>
                 <li><a href="#Serviços">Serviços</a></li>
                 <li><a href="#Portfólio">Portfólio</a></li>
                 <li><a href="#Contatos">Contatos</a></li>
+                <i class="fa-solid fa-xmark" onclick="fecharmenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="abrirmenu()"></i>
         </nav>
-        <div class="hearder-text">
+        <div class="header-text">
             <p>Portfólio</p>
             <h1>Olá, Eu sou <span>Évillyn Kelle!</span><br> Desenvolvedora de sites.</h1>
         </div>
@@ -34,7 +37,7 @@
                 <img src="imagem6.png">
             </div>
             <div class="sobre-col-2">
-                <h1 class="sub-títilo">Sobre mim</h1>
+                <h1 class="sub-título">Sobre mim</h1>
                 <p>Nascida em Teresina-Piauí, mas criada em Picos-Piauí, estudo informática no Instituto Federal de Picos aos 16 anos. Estou no início da minha jornada na programação web, explorando como transformar ideias em realidade digital enquanto busco adquirir habilidades práticas e criativas para contribuir para um mundo digitalmente inovador.</p>
 
                 <div class="aba-títulos">
@@ -171,5 +174,19 @@
         document.getElementById(abanome).classList.add("aba-ativa");
     }
 </script>
+
+<script>
+    var menusite = document.getElementById("menusite");
+    
+    function abrirmenu(){
+        menusite.style.right = "0";
+    }
+
+    function fecharmenu(){
+        menusite.style.right = "-200px";
+    }
+
+</script>
+</main>
 </body>
 </html> 
