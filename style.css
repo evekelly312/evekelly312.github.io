@@ -1,180 +1,341 @@
-<!DOCTYPE html>
-<html lang="Pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu site</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f4e9277dda.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="header">
-    <div class="container"> 
-        <nav>
-            <img src="imagens/logo.png" class="logo">
-            <ul>
-                <li><a href="#header">Início</a></li>
-                <li><a href="#Sobre">Sobre</a></li>
-                <li><a href="#Serviços">Serviços</a></li>
-                <li><a href="#Portfólio">Portfólio</a></li>
-                <li><a href="#Contatos">Contatos</a></li>
-            </ul>
-        </nav>
-        <div class="hearder-text">
-            <p>Portfólio</p>
-            <h1>Olá, Eu sou <span>Évillyn Kelle!</span><br> Desenvolvedora de sites.</h1>
-        </div>
-    </div>
-</div>
-<!--------------- Sobre ------------------->
-<div id="Sobre">
-    <div class="container">
-        <div class="linha">
-            <div class="sobre-col-1">
-                <img src="imagens/imagem6.png">
-            </div>
-            <div class="sobre-col-2">
-                <h1 class="sub-títilo">Sobre mim</h1>
-                <p>Nascida em Teresina-Piauí, mas criada em Picos-Piauí, estudo informática no Instituto Federal de Picos aos 16 anos. Estou no início da minha jornada na programação web, explorando como transformar ideias em realidade digital enquanto busco adquirir habilidades práticas e criativas para contribuir para um mundo digitalmente inovador.</p>
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
 
-                <div class="aba-títulos">
-                    <p class="aba-links link-ativo" onclick="opentab('Habilidades')">Habilidades</p>
-                    <p class="aba-links"  onclick="opentab('Experiência')">Experiência</p>
-                    <p class="aba-links"  onclick="opentab('Educação')">Educação</p>
-                </div>
-                <div class="aba-conteudo aba-ativa" id="Habilidades">
-                    <ul>
-                        <li><span>Desing</span><br>Designer web</li>
-                        <li><span>Liderança</span><br>Liderança de projetos, como: o projeto MINFO.</li>
-                    </ul>
-                </div>
-                <div class="aba-conteudo" id="Experiência">
-                    <ul>
-                        <li><span>MINFO-2023</span><br>O MINFO, foi um projeto de cunho tecnológico, a fim de expor os aplicativos desenvolvidos pelos alunos do IFPI.</li>
-                        <li><span>APP-Planeje e Estude</span><br>Aplicativo, criado e desenvolvido em grupo, no ano de 2023.</li>
-                        <li><span>Site Responsivo-2024</span><br>Site desenvolvido, com o auxilio do Prof. Jesiel Viana, na matéria de Intro. a Programação web. </li>
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 200px;
+}
 
-                    </ul>
-                </div>
-                <div class="aba-conteudo" id="Educação">
-                    <ul>
-                        <li><span>Ensino Fundamental</span><br>Do 1° ao 9° ano estudei no colégio Machado de Assis.</li>
-                        <li><span>Ensino Médio</span><br>Ainda em curso, no Instituto Federal de Picos-Piauí.</li>
-                        <li><span>Curso de Técnico de informática</span><br>Ainda em curso, integrado ao Ensino Médio. </li>
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: pink;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0,5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
 
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- ----------------- Serviços ----------------- -->
-<div id="Serviços">
-    <div class="Container">
-        <h1 class="sub-título">Meus Serviços</h1>
-        <div class="Lista-serviços">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Desenvolvedora web</h2>
-                <p>Estou no começo, mas tenho desenvolvido páginas web, contendo não so uma boa estrutura, mas tambem tentando apresentar uma boa estilização. </p>
-                <a href="#">Saiba mais</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-person-chalkboard"></i>
-                <h2>Assessoria de marketing</h2>
-                <p>Dando todo o suporte, para que um negócio destrave sua comunicação nas mídias sociais. </p>
-                <a href="#">Saiba mais</a>
-            </div>
-            <div class="div3">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <h2>Designer de apps</h2>
-                <p>Cuido da identidade visual de apps e sites.</p>
-                <a href="#">Saiba mais</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!----------------Portfólio------------------>
-<div id="Portfólio">
-    <div class="container">
-        <h1 class="sub-título2">Meus Trabalhos</h1>
-        <div class="lista-trabalhos">
-            <div class="Trabalho">
-                <img src="imagens/imagem1.jpg">
-                <div class="camada">
-                    <h3>Desenvolvedora</h3>
-                    <p>Desenvolvo sites como esse.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="Trabalho">
-                <img src="imagens/imagem3.jpg">
-                <div class="camada">
-                    <h3>Designer</h3>
-                    <p>Cuido, em comunidade, da identidade visual do app UGYM.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="Trabalho">
-                <img src="imagens/imagem2.jpg">
-                <div class="camada">
-                    <h3>Estudante</h3>
-                    <p>Crescendo em conhecimentos gerais e de T.I., entre eles a programação.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">Ver mais</a>
-    </div>
-</div>
-<!------------------------ Contatos ---------------------------->
-<div id="Contatos">
-    <div class="container">
-        <div class="linha">
-            <div class="contato-esquerda">
-                <h1 class="sub-título2">Contate-me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>evillynk387@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>(89) 9 9981-4406</p>
-                <div class="icones-sociais">
-                    <a href="https://www.facebook.com/profile.php?id=61556173693730"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/evillynkelle/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/evekelly312"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="contato-direita">
-                <form action="https://api.staticforms.xyz/submit" method="post">
-                    <input type="text" name="Name" placeholder="Seu Nome" required>
-                    <input type="email" name="email" placeholder="Seu Email" required>
-                    <textarea name="Mensagem" rows="6" placeholder="Sua Mensagem"></textarea>
-                    <button type="enviar" class="btn btn2">Enviar</button>
-                    
-                    
-                    <input type="hidden" name="accessKey" value="6ae40172-7b81-4c35-bf76-7395303682c5">
-                    <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
-                    <input type="submit" value="Submit" />
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © Évillyn. Site responsivo<i class="fa-solid fa-heart"></i></p>
-    </div>
-</div>
+.hearder-text{
+    margin-top: 10%;
+    font-size: 30px;
+}
+.hearder-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.hearder-text h1 span{
+    color: pink;
+}
 
-<script>
-    var abalinks = document.getElementsByClassName("aba-links");
-    var abaconteudo = document.getElementsByClassName("aba-conteudo");
+/* ------------- Sobre ------------ */
+#sobre{
+    padding: 80px 0;
+    color: #ababab;
+}
+.linha{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
-    function opentab(abanome) {
-        for (var i = 0; i < abalinks.length; i++) {
-            abalinks[i].classList.remove("link-ativo");
-        }
-        for (var i = 0; i < abaconteudo.length; i++) {
-            abaconteudo[i].classList.remove("aba-ativa");
-        }
-        event.target.classList.add("link-ativo");
-        document.getElementById(abanome).classList.add("aba-ativa");
-    }
-</script>
-</body>
-</html>     
+.sobre-col-1{
+    flex-basis: 35%;
+}
+.sobre-col-1 img{
+    width: 90%;
+    border-radius: 15px;
+}
+.sobre-col-2{
+    flex-basis: 60%;
+}
+
+.sub-título{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.aba-títulos{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.aba-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.aba-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: pink;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0,5s;
+}
+.aba-links.link-ativo::after{
+    width: 50%;
+}
+
+.aba-conteudo ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.aba-conteudo ul li span{
+    color: pink;
+    font-size: 14px;
+}
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo.aba-ativa{
+    display: block;
+}
+
+/*--------------- Serviços ---------------*/
+#serviços{
+    padding: 30px 0;
+}
+
+.sub-título{
+    margin-left: 145px;
+} 
+
+.Lista-serviços{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    width: 90%;
+}
+.Lista-serviços div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0,5s, transform 0,5s;
+    margin-left: 145px;
+    width: 80%;
+}
+.Lista-serviços div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.div3{
+    margin-right: 30px;
+}
+
+.Lista-serviços div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.Lista-serviços div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.Lista-serviços div:hover{
+    background: pink;
+    transform: translateY(-10px)
+}
+/*---------------- Portólio ----------------*/
+#portfólio{
+    padding: 50px 0;
+}
+.sub-título2{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.lista-trabalhos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.Trabalho{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.Trabalho img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.camada{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ffc0cb);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.camada h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.camada a{
+    margin-top: 20px;
+    color: #ffc0cb;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.Trabalho:hover img{
+    transform: scale(1.1)
+}
+.Trabalho:hover .camada{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ffc0cb;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff; 
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ffc0cb;
+}
+
+/*---------------- Contatos ---------------*/
+.contato-esquerda{
+    flex-basis: 35%;
+}
+.contato-direita{
+    flex-basis: 60%;
+}
+
+.contato-esquerda p{
+    margin-top: 10%;
+}
+.contato-esquerda p i{
+    color: #ffc0cb;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.icones-sociais{
+    margin-top: 30px;
+}
+.icones-sociais a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.icones-sociais a:hover{
+    color: #ffc0cb;
+    transform: translateY(-0.5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ffc0cb;
+}
+.contato-direita form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+     margin-top: 20px;
+}
+.copyright i{
+    color: #ffc0cb;
+}
+.sub-título2{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+/*----------------- Responsividade --------------*/
+
