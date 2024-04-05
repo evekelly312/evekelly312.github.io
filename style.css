@@ -1,0 +1,561 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+/*estilo do header*/
+header {
+    width: 100%;
+    padding: 28px 8%;
+    position: relative;
+    top: 0;
+    background-color: pink;
+    box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    margin-bottom:80px ;
+
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 24px;
+    color: #02111B;
+}
+#nav_logo a {
+    color: black;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.nav-item a:hover{
+    color: #fff;
+  }
+  
+  #mobile_btn {
+      display: none;
+  }
+  #mobile_btn i {
+    transition: transform 0.3s ease-in-out;
+}
+  
+  #mobile_menu {
+    display: none;
+    transition: transform 0.3s ease-in-out;
+}
+h1, .navigation{
+    text-align: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 200px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li{
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: pink;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0,5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.hearder-text{
+    margin-top: 10%;
+    font-size: 30px;
+}
+.hearder-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.hearder-text h1 span{
+    color: pink;
+}
+
+/* ------------- Sobre ------------ */
+#sobre{
+    padding: 80px 0;
+    color: #ababab;
+}
+.linha{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.sobre-col-1{
+    flex-basis: 35%;
+}
+.sobre-col-1 img{
+    width: 90%;
+    border-radius: 15px;
+}
+.sobre-col-2{
+    flex-basis: 60%;
+}
+
+.sub-título{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.aba-títulos{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.aba-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.aba-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: pink;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0,5s;
+}
+.aba-links.link-ativo::after{
+    width: 50%;
+}
+
+.aba-conteudo ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.aba-conteudo ul li span{
+    color: pink;
+    font-size: 14px;
+}
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo.aba-ativa{
+    display: block;
+}
+
+/*--------------- Serviços ---------------*/
+#serviços{
+    padding: 30px 0;
+}
+
+.sub-título{
+    
+    text-align: center;
+} 
+
+.Lista-serviços{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+}
+.Lista-serviços div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    transform-origin: center;
+    margin-bottom: 30px;
+    width: 30%;
+    height: 100%;
+
+}
+.Lista-serviços div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.div3{
+    margin-right: 30px;
+}
+
+.Lista-serviços div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.Lista-serviços div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.Lista-serviços div:hover{
+    background: pink;
+    transform: translateY(-10px)
+}
+
+
+#portfólio{
+    padding: 50px 0;
+}
+.sub-título2{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.lista-trabalhos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.Trabalho{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    min-width: 70%;
+}
+.Trabalho img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.camada{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ffc0cb);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.camada h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.camada a{
+    margin-top: 20px;
+    color: #ffc0cb;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.Trabalho:hover img{
+    transform: scale(1.1)
+}
+.Trabalho:hover .camada{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ffc0cb;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff; 
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ffc0cb;
+}
+
+/*---------------- Contatos ---------------*/
+.contato-esquerda{
+    flex-basis: 35%;
+}
+.contato-direita{
+    flex-basis: 60%;
+}
+
+.contato-esquerda p{
+    margin-top: 10%;
+}
+.contato-esquerda p i{
+    color: #ffc0cb;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.icones-sociais{
+    margin-top: 30px;
+}
+.icones-sociais a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.icones-sociais a:hover{
+    color: #ffc0cb;
+    transform: translateY(-0.5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ffc0cb;
+}
+.contato-direita form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyrigh{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+     margin-top: 20px;
+}
+.copyrigh i{
+    color: #ffc0cb;
+}
+.sub-título2{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+/*----------------- Responsividade --------------*/
+@media screen and (max-width: 768px){
+    
+    .Lista-serviços div{
+        width: 90%;
+    }
+    header{
+        min-width: 100%;
+    }
+    .aba-títulos{
+        padding-left: 60px;
+        max-width: fit-content;
+        align-items: center;
+        display: flex; /* Add missing property */
+        justify-content: center; /* Add missing property */
+    }
+    .linha{
+        flex-direction: column;
+        
+        font-size: 1.6em;
+        
+    }
+    .sobre-col-1{
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .sobre-col-1 img {
+        width: 90%;
+        border-radius: 15px;
+        margin-bottom: 70%;
+    }
+    .sobre-col-2{
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
+    .icones-sociais{
+        display: flex;
+        justify-content: center;
+    }
+    .btn.btn2{
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .Trabalho{
+        max-width: 90%;
+    }
+    #nav_list {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    } 
+    
+}
+@media screen and (max-width: 576px){
+    .Lista-serviços div{
+        width: 90%;
+    }
+    header{
+        min-width: 100%;
+    }
+    .aba-títulos{
+        padding-left: 60px;
+        max-width: fit-content;
+        align-items: center;
+        display: flex; /* Add missing property */
+        justify-content: center; /* Add missing property */
+    }
+    .linha{
+        flex-direction: column;
+    }
+    .sobre-col-1{
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .sobre-col-1 img {
+        width: 90%;
+        border-radius: 15px;
+        margin-bottom: 0%;
+    }
+    
+    .sobre-col-2{
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
+    .icones-sociais{
+        display: flex;
+        justify-content: center;
+    }
+    .btn.btn2{
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .Trabalho{
+        min-width: 80%;
+
+    }
+    
+    #nav_list {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    } 
+    
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f4e9277dda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <h1 id="nav_logo"> <a href="">Evellyn kelle</a> </h1>
+            <ul id="nav_list">
+                <li><a href="#header">Início</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Serviços">Serviços</a></li>
+                <li><a href="#Portfólio">Portfólio</a></li>
+                <li><a href="#Contatos">Contatos</a></li>
+
+                
+            </ul>
+
+            <button id="mobile_btn" aria-label="Icone de Três barrinhas - menu hamburguer ">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li><a href="#header">Início</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Serviços">Serviços</a></li>
+                <li><a href="#Portfólio">Portfólio</a></li>
+                <li><a href="#Contatos">Contatos</a></li>
+            </ul>
+        </div>
+    </header>
+<!--------------- Sobre ------------------->
+<div id="Sobre">
+    <div class="container">
+        <div class="linha">
+            <div class="sobre-col-1">
+                <img src="img/imagem6.png">
+            </div>
+            <div class="sobre-col-2">
+                <h1 class="sub-títilo">Sobre mim</h1>
+                <p>Nascida em Teresina-Piauí, mas criada em Picos-Piauí, estudo informática no Instituto Federal de Picos aos 16 anos. Estou no início da minha jornada na programação web, explorando como transformar ideias em realidade digital enquanto busco adquirir habilidades práticas e criativas para contribuir para um mundo digitalmente inovador.</p>
+
+                <div class="aba-títulos">
+                    <p class="aba-links link-ativo" onclick="opentab('Habilidades')">Habilidades</p>
+                    <p class="aba-links"  onclick="opentab('Experiência')">Experiência</p>
+                    <p class="aba-links"  onclick="opentab('Educação')">Educação</p>
+                </div>
+                <div class="aba-conteudo aba-ativa" id="Habilidades">
+                    <ul>
+                        <li><span>Desing</span><br>Designer web</li>
+                        <li><span>Liderança</span><br>Liderança de projetos, como: o projeto MINFO.</li>
+                    </ul>
+                </div>
+                <div class="aba-conteudo" id="Experiência">
+                    <ul>
+                        <li><span>MINFO-2023</span><br>O MINFO, foi um projeto de cunho tecnológico, a fim de expor os aplicativos desenvolvidos pelos alunos do IFPI.</li>
+                        <li><span>APP-Planeje e Estude</span><br>Aplicativo, criado e desenvolvido em grupo, no ano de 2023.</li>
+                        <li><span>Site Responsivo-2024</span><br>Site desenvolvido, com o auxilio do Prof. Jesiel Viana, na matéria de Intro. a Programação web. </li>
+
+                    </ul>
+                </div>
+                <div class="aba-conteudo" id="Educação">
+                    <ul>
+                        <li><span>Ensino Fundamental</span><br>Do 1° ao 9° ano estudei no colégio Machado de Assis.</li>
+                        <li><span>Ensino Médio</span><br>Ainda em curso, no Instituto Federal de Picos-Piauí.</li>
+                        <li><span>Curso de Técnico de informática</span><br>Ainda em curso, integrado ao Ensino Médio. </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------- Serviços ----------------- -->
+<div id="Serviços">
+    <div class="Container">
+        <h1 class="sub-título">Meus Serviços</h1>
+        <div class="Lista-serviços">
+            <div class="habilidade">
+                <i class="fa-solid fa-code"></i>
+                <h2>Desenvolvedora web</h2>
+                <p>Estou no começo, mas tenho desenvolvido páginas web, contendo não so uma boa estrutura, mas tambem tentando apresentar uma boa estilização. </p>
+                <a href="#">Saiba mais</a>
+            </div>
+            <div class="habilidade">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                <h2>Assessoria de marketing</h2>
+                <p>Dando todo o suporte, para que um negócio destrave sua comunicação nas mídias sociais. </p>
+                <a href="#">Saiba mais</a>
+            </div>
+            <div class="habilidade">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Designer de apps</h2>
+                <p>Cuido da identidade visual de apps e sites, focando na experiencia do ususario. </p>
+                <a href="#">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------Portfólio------------------>
+<div id="Portfólio">
+    <div class="container">
+        <h1 class="sub-título2">Meus Trabalhos</h1>
+        <div class="lista-trabalhos">
+            <div class="Trabalho">
+                <img src="img/imagem1.jpg">
+                <div class="camada">
+                    <h3>Desenvolvedora</h3>
+                    <p>Desenvolvo sites como esse.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Trabalho">
+                <img src="img/imagem3.jpg">
+                <div class="camada">
+                    <h3>Designer</h3>
+                    <p>Cuido, em comunidade, da identidade visual do app UGYM.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="Trabalho">
+                <img src="img/imagem2.jpg">
+                <div class="camada">
+                    <h3>Estudante</h3>
+                    <p>Crescendo em conhecimentos gerais e de T.I., entre eles a programação.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Ver mais</a>
+    </div>
+</div>
+<!------------------------ Contatos ---------------------------->
+<div id="Contatos">
+    <div class="container">
+        <div class="linha2">
+            <div class="contato-esquerda">
+                <h1 class="sub-título2">Contate-me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>evillynk387@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(89) 9 9981-4406</p>
+                <div class="icones-sociais">
+                    <a href="https://www.facebook.com/profile.php?id=61556173693730"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/evillynkelle/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/evekelly312"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contato-direita">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="text" name="Name" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <textarea name="Mensagem" rows="6" placeholder="Sua Mensagem"></textarea>
+                    <button type="enviar" class="btn btn2">Enviar</button>
+                    
+                    
+                    <input type="hidden" name="accessKey" value="6ae40172-7b81-4c35-bf76-7395303682c5">
+                    <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Évillyn. Site responsivo<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var abalinks = document.getElementsByClassName("aba-links");
+    var abaconteudo = document.getElementsByClassName("aba-conteudo");
+
+    function opentab(abanome) {
+        for (var i = 0; i < abalinks.length; i++) {
+            abalinks[i].classList.remove("link-ativo");
+        }
+        for (var i = 0; i < abaconteudo.length; i++) {
+            abaconteudo[i].classList.remove("aba-ativa");
+        }
+        event.target.classList.add("link-ativo");
+        document.getElementById(abanome).classList.add("aba-ativa");
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+    var mobileBtn = document.getElementById('mobile_btn');
+    
+    mobileBtn.addEventListener('click', function () {
+        var mobileMenu = document.getElementById('mobile_menu');
+        
+        // Alterna a classe 'active' do menu
+        mobileMenu.classList.toggle('active');
+        
+        
+    });
+});
+</script>
+</body>
+</html>     
